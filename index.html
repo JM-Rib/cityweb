@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>City Web</title>
+</head>
+<body>
+
+  <!-- Le bouton qui permet de déplier le menu -->
+  <div id="menuBtn" onclick="ouvrirMenu()">☰</div>
+
+  <!-- Le menu de navigation sur le coté de la page -->
+  <nav id="sideMenu">
+    <ul>
+        <li><a id="bouton_page" href="??">Europe</a></li>
+        <li><a id="bouton_page" href="??">Asie</a></li>
+        <li><a id="bouton_page" href="??">Amérique</a></li>
+    </ul>
+  </nav>
+
+  <!-- Le haut de page qui possède le titre de la page -->
+  <div id="content">
+    <header>
+      <h1>Accueil</h1>
+    </header>
+
+    <!-- La section du europe -->
+    <div id="section">
+
+      <!-- Titre puis description de la section de europe -->
+      <h2>Europe</h2>
+      <p>L'Europe, berceau de l'histoire et de la diversité culturelle, fascine par son héritage riche en traditions et ses paysages variés qui témoignent d'une longue histoire façonnée par différentes civilisations.</p>
+      
+      <!-- Liste d'images des villes d'europes -->
+      <div id="liste_images">
+        <a href="??"><img src="images/London.jpg" alt="London"></a>
+        <a href="??"><img src="images/Milano.jpg" alt="Milano"></a>
+        <a href="??"><img src="images/Venice.jpg" alt="Venice"></a>
+    </div>
+
+    <!-- Boutton centré qui amene vers la page du badminton -->
+    <button id="bouton_voir" onclick="window.location.href='??'">Voir</button>
+    </div>
+
+    <!-- La section de l'asie -->
+    <div id="section">
+
+      <!-- Titre puis description de la section de l'asie -->
+      <h2>Asie</h2>
+      <p>L'Asie, vaste continent aux contrastes saisissants, marie la modernité urbaine à des traditions millénaires, offrant ainsi une mosaïque culturelle unique où l'innovation coexiste harmonieusement avec la profondeur de l'histoire ancienne.</p>
+      
+      <!-- Liste d'images de l'asie -->
+      <div id="liste_images">
+        <a href="??"><img src="images/London.jpg" alt="London"></a>
+        <a href="??"><img src="images/Milano.jpg" alt="Milano"></a>
+        <a href="??"><img src="images/Venice.jpg" alt="Venice"></a>
+    </div>
+
+    <!-- Boutton centré qui amene vers la page de l'asie -->
+    <button id="bouton_voir" onclick="window.location.href='??'">Voir</button>
+    </div>
+
+    <!-- La section de l'amérique -->
+    <div id="section">
+
+      <!-- Titre puis description de la section amerique -->
+        <h2>Amérique</h2>
+        <p>L'Amérique, continent aux multiples facettes, évoque l'aventure et la diversité à travers ses vastes paysages, ses cultures dynamiques et son histoire marquée par l'évolution des sociétés autochtones et l'influence des vagues d'immigration successives.</p>
+
+        <!-- Liste d'images de l'amerique-->
+        <div id="liste_images">
+            <a href="??"><img src="images/London.jpg" alt="London"></a>
+            <a href="??"><img src="images/Milano.jpg" alt="Milano"></a>
+            <a href="??"><img src="images/Venice.jpg" alt="Venice"></a>
+        </div>
+
+      <!-- Boutton centré qui amene vers la page du hobbyhorse-->
+      <button id="bouton_voir"  onclick="window.location.href='basket.html'">Voir</button>
+      </div>
+
+      <!-- Le bas de page -->
+      <div id="basdepage">
+
+        <!-- bloc centré à gauche -->
+        <div id="textecote">
+          <p>GASC Youenn</p>
+        </div>
+
+        <!-- bloc centré au centre et entouré en noir -->
+        <div id="textecote">
+          <p>TALEC Bastien</p>
+        </div>
+
+        <!-- bloc centré à droite -->
+        <div id="textecote">
+          <p>Jean-Marin RIBARIC</p>
+        </div>
+        
+        
+      </div>
+
+
+  </div>
+
+</body>
+<script>
+
+
+    // la fonction ouvrirMenu() va se lancer à chaque fois que elle va être appelée avec un onclick="ouvrirMenu()"
+    function ouvrirMenu () {
+      // on récupère le bloc qui a comme Id sideMenu et on le met dans la variable "sideMenu"
+      var sideMenu = document.getElementById('sideMenu');
+
+      // on récupère le bloc qui a comme Id content et on le met dans la variable "content"
+      var content = document.getElementById('content');
+      
+      // si sideMenu (= le menu de navigation) est ouvert, donc qu'il est à 0 pixels à gauche,
+      // alors on le déplace de 250 pixels à gauche de la page dans le vide (et du coup on le voit pas)
+      // et en même temps on met une marge pour le corps de la page de 0 pour qu'il soit à gauche
+      if (sideMenu.style.left == "0px") {
+          sideMenu.style.left = "-250px";
+          content.style.marginLeft = "0";
+      } 
+      else 
+      // sinon ça veut dire que le menu est fermé,
+      // alors on l'ouvre en le mettant son style CSS à gauche et en déplaçant le corps de la page de 250 pixels en ajoutant une marge
+      { 
+          sideMenu.style.left = "0";
+          content.style.marginLeft = "250px";
+      }
+  }
+
+
+</script>
+</html>
