@@ -13,3 +13,63 @@ body {
     height: 100%;
     back
 }
+/*Allique le texte au centre de ul*/
+ul{
+
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.imageLeftText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    width: 100%;
+}
+
+.image-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.tableau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tableau > table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.tableau > table > tr{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.tableau > table > tr > th{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background-color: #4c669f;
+    color: white;
+}
