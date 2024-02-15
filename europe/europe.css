@@ -1,0 +1,159 @@
+body {
+    /* Mise en place d' une meilleure police d'écriture  */
+    font-family: Arial, sans-serif; 
+    /* Image qui est mise en fond d'écran  */
+    background-image: url('../images/Milano2.jpg');
+    /* propriété qui fait que l'image de fond recouvre tout le fond (et ne se répète pas si elle est trop petite) */
+    background-size: cover;
+    /* ça permet d'aligner les balises qui sont dans le body au centre du body  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  /* la balise content contient toute la page  */
+  #content {
+    /* sa largeur est 60% la taille de la fenètre  */
+    width: 60%;
+    /* ça permet d'aligner ses balises dedans au centre  */
+    text-align: center;
+    /* la transition quand le menu bouge, est de 0.3 secondes, pour quand il se déplie */
+    transition: 0.3s;
+  }
+  
+  
+  
+  /* header = le titre accueil  */
+  header {
+    /* le fond du bloc du titre est bleu  */
+    background: #4c669f;
+    /* le titre est de couleur blanc  */
+    color: white;
+    /* l' épaisseur du bloc du titre est de 20 pixels (de haut)  */
+    padding: 20px;
+    /* les coins sont arrondis de 12 pixels  */
+    border-radius: 12px;
+    /* il y a 20 pixels d'espace sous ce bloc  */
+    margin-bottom: 20px;
+    /* fait l'ombre derriere la balise.  */
+    /* le premier nombre c'est que l'ombre s'étend 8 pixels sur la gauche  */
+    /* le deuxième nombre c'est que l'ombre s'étend 8 pixels vers le bas  */
+    /* le troisieme nombre c'est le flou (ne pas laisser à 0 sinon c'est moche)  */
+    /* black c'est pour la couleur  */
+    box-shadow: 8px 8px 16px black;
+  }
+  
+  
+  
+  h1 {
+    /* réduit la marge autour du titre à 0  */
+    margin: 0;
+    /* le titre de la page est gros de 36 pixels  */
+    font-size: 36px;
+  }
+  
+  
+  
+  h2 {
+    /* le titre est bleu  */
+    color: #4c669f;
+    /* le titre de la page est gros de 24 pixels  */
+    font-size: 24px;
+  }
+
+
+  #bouton_voir {
+    /* le fond du bouton est bleu foncé  */
+    background-color: #4c669f;
+    /* le texte du bouton est blanc  */
+    color: white;
+    padding: 15px 20px;
+    /* le bouton n'a pas de bordure visible */
+    border: none;
+    /* les coins du bouton sont arrondis de 5 pixels */
+    border-radius: 5px;
+    /* la police d'écriture du texte du bouton est de 16 pixels */
+    font-size: 16px;
+    /* quand la souris passe dessus, elle montre qu'on peut cliquer dessus */
+    cursor: pointer;
+    /* la transition quand le bouton bouge, est de 0.3 secondes, pareil pour la transformation. Les deux sont pour adoucir la transition quand 
+    on passe la souris dessus. Voir le hover ci-dessus pour voir les changements */
+    transition: background-color 0.3s, transform 0.3s;
+    /* le bouton voir est mis à gauche à 45% de la largeur de la page pour qu'il soit centré (50% le positione un peu trop sur la droite) */
+    margin-right: 0%;
+  }
+  
+  
+  
+  #section {
+    /* le fond de la section est blanche  */
+    background-color: #fff;
+    /* la bordure de la section fait 2 pixels de large, solid c'est que c'est un trait continu (pas de pointillés) et de couleur grise  */
+    border: 2px solid #7b7b7b;
+    /* les coins sont arrondis de 8 pixels  */
+    border-radius: 8px;
+    /* l' épaisseur du bloc du titre est de 20 pixels (de haut)  */
+    padding: 20px;
+    /* il y a 20 pixels d'espace sous ce bloc  */
+    margin-bottom: 20px;
+    /* ça permet d'aligner ses balises dedans à gauche  */
+    text-align: left;
+    /* fait l'ombre derriere la balise.  */
+    /* le premier nombre c'est que l'ombre s'étend 8 pixels sur la gauche  */
+    /* le deuxième nombre c'est que l'ombre s'étend 8 pixels vers le bas  */
+    /* le troisieme nombre c'est le flou (ne pas laisser à 0 sinon c'est moche)  */
+    /* black c'est pour la couleur  */
+    box-shadow: 8px 8px 16px black;
+    /* aligner les élements dedans au centre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  
+  p {
+    /* permet de multiplier l'espace habituel entre les lignes de 1,5, sinon elles sont trop serrées  */
+    line-height: 1.5;
+  }
+  
+  
+  
+  #basdepage {
+    /* le fond du bas de page est blanc  */
+    background-color: #fff;
+    /* la bordure de la section fait 2 pixels de large, solid c'est que c'est un trait continu (pas de pointillés) et de couleur grise  */
+    border: 2px solid #7b7b7b;
+    /* les coins sont arrondis de 8 pixels  */
+    border-radius: 8px;
+    /* l' épaisseur du bloc du titre est de 20 pixels (de haut)  */
+    padding: 20px;
+    /* il y a 20 pixels d'espace sous ce bloc  */
+    margin-bottom: 20px;
+    /* ça permet d'aligner ses balises dedans à gauche  */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    /* fait l'ombre derriere la balise.  */
+    /* le premier nombre c'est que l'ombre s'étend 8 pixels sur la gauche  */
+    /* le deuxième nombre c'est que l'ombre s'étend 8 pixels vers le bas  */
+    /* le troisieme nombre c'est le flou (ne pas laisser à 0 sinon c'est moche)  */
+    /* black c'est pour la couleur  */
+    box-shadow: 8px 8px 16px black;
+  }
+  
+  
+  img{
+    /* les images font 200 pixels de large  */
+    width: 200px;
+    /* les images ont une hauteur automatique : proportionnelles à leur dimension de base, avec la largeur définie ci-dessus  */
+    height: auto;
+  }
+  
+
+
+
+  
+    
