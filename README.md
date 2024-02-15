@@ -1,6 +1,14 @@
-# cityweb
-Projet d'entrainement utilisation git
+# Présentation de cityweb
 
+Ceci est un projet d'entrainement pour l'utilisation de git.
+Le projet présente les villes ou paysages du monde. Ces villes sont catégorisées en fonction de leur continents. Le dossier europe regroupe les villes d'Europe. Le dossier Amérique regroupe les paysages d'Amérique. Le dossier Asie regroupe les endroits d'Asie.
+Le projet est réalisé en html/css/javascript.
+
+# Membres
+
+- Youenn GASC
+- Jean-Marin RIBARIC
+- Bastien TALEC
 
 
 ## Convention de Préfixes de Commit
