@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
   <title>City Web</title>
 </head>
 <body>
@@ -14,8 +14,8 @@
   <!-- Le menu de navigation sur le coté de la page -->
   <nav id="sideMenu">
     <ul>
-        <li><a id="bouton_page" href="??">Europe</a></li>
-        <li><a id="bouton_page" href="??">Asie</a></li>
+        <li><a id="bouton_page" href="./europe/index.html">Europe</a></li>
+        <li><a id="bouton_page" href="./amerique/amerique.html">Asie</a></li>
         <li><a id="bouton_page" href="??">Amérique</a></li>
     </ul>
   </nav>
@@ -35,13 +35,13 @@
       
       <!-- Liste d'images des villes d'europes -->
       <div id="liste_images">
-        <a href="??"><img src="images/London.jpg" alt="London"></a>
-        <a href="??"><img src="images/Milano.jpg" alt="Milano"></a>
-        <a href="??"><img src="images/Venice.jpg" alt="Venice"></a>
+        <a href="europe/london.html"><img src="images/London.jpg" alt="London"></a>
+        <a href="europe/milano.html"><img src="images/Milano.jpg" alt="Milano"></a>
+        <a href="europe/venice.html"><img src="images/Venice.jpg" alt="Venice"></a>
     </div>
 
-    <!-- Boutton centré qui amene vers la page du badminton -->
-    <button id="bouton_voir" onclick="window.location.href='??'">Voir</button>
+    <!-- Boutton centré qui amene vers la page de l'europe -->
+    <button id="bouton_voir" onclick="window.location.href='./europe/index.html'">Voir</button>
     </div>
 
     <!-- La section de l'asie -->
@@ -53,9 +53,9 @@
       
       <!-- Liste d'images de l'asie -->
       <div id="liste_images">
-        <a href="??"><img src="images/London.jpg" alt="London"></a>
-        <a href="??"><img src="images/Milano.jpg" alt="Milano"></a>
-        <a href="??"><img src="images/Venice.jpg" alt="Venice"></a>
+        <a href="??"><img src="images/London.jpg" alt="Ville1"></a>
+        <a href="??"><img src="images/Milano.jpg" alt="Ville2"></a>
+        <a href="??"><img src="images/Venice.jpg" alt="Ville3"></a>
     </div>
 
     <!-- Boutton centré qui amene vers la page de l'asie -->
@@ -71,13 +71,13 @@
 
         <!-- Liste d'images de l'amerique-->
         <div id="liste_images">
-            <a href="??"><img src="images/London.jpg" alt="London"></a>
-            <a href="??"><img src="images/Milano.jpg" alt="Milano"></a>
-            <a href="??"><img src="images/Venice.jpg" alt="Venice"></a>
+            <a href="./amerique/amerique.html"><img src="images/grand_canyon.jpg" alt="London"></a>
+            <a href="./amerique/amerique.html"><img src="images/Yellowstone.jpg" alt="Milano"></a>
+            <a href="./amerique/amerique.html"><img src="images/lac-moraine-alberta.jpg" alt="Venice"></a>
         </div>
 
-      <!-- Boutton centré qui amene vers la page du hobbyhorse-->
-      <button id="bouton_voir"  onclick="window.location.href='basket.html'">Voir</button>
+      <!-- Boutton centré qui amene vers la page de l'amerique-->
+      <button id="bouton_voir"  onclick="window.location.href='./amerique/amerique.html'">Voir</button>
       </div>
 
       <!-- Le bas de page -->
@@ -97,41 +97,11 @@
         <div id="textecote">
           <p>Jean-Marin RIBARIC</p>
         </div>
-        
-        
       </div>
 
 
   </div>
 
 </body>
-<script>
-
-
-    // la fonction ouvrirMenu() va se lancer à chaque fois que elle va être appelée avec un onclick="ouvrirMenu()"
-    function ouvrirMenu () {
-      // on récupère le bloc qui a comme Id sideMenu et on le met dans la variable "sideMenu"
-      var sideMenu = document.getElementById('sideMenu');
-
-      // on récupère le bloc qui a comme Id content et on le met dans la variable "content"
-      var content = document.getElementById('content');
-      
-      // si sideMenu (= le menu de navigation) est ouvert, donc qu'il est à 0 pixels à gauche,
-      // alors on le déplace de 250 pixels à gauche de la page dans le vide (et du coup on le voit pas)
-      // et en même temps on met une marge pour le corps de la page de 0 pour qu'il soit à gauche
-      if (sideMenu.style.left == "0px") {
-          sideMenu.style.left = "-250px";
-          content.style.marginLeft = "0";
-      } 
-      else 
-      // sinon ça veut dire que le menu est fermé,
-      // alors on l'ouvre en le mettant son style CSS à gauche et en déplaçant le corps de la page de 250 pixels en ajoutant une marge
-      { 
-          sideMenu.style.left = "0";
-          content.style.marginLeft = "250px";
-      }
-  }
-
-
-</script>
+<script src="script.js"></script>
 </html>
